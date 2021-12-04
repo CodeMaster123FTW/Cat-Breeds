@@ -151,9 +151,12 @@ class HomePage extends StatelessWidget {
 
             const SizedBox(height: 20, width: 20),
 
-            Container(
-              child: const Text('The Siamese cat is one of the first distinctly recognized breeds of Asian cat. Derived from the Wichianmat landrace, one of several varieties of cat native to Thailand, the original Siamese became one of the most popular breeds in Europe and North America in the 19th century.', style: TextStyle(fontSize: 40)),
-              decoration: BoxDecoration(border: Border.all(color: Colors.grey, width: 20))
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(
+                child: const Text('The Siamese cat is one of the first distinctly recognized breeds of Asian cat. Derived from the Wichianmat landrace, one of several varieties of cat native to Thailand, the original Siamese became one of the most popular breeds in Europe and North America in the 19th century.', style: TextStyle(fontSize: 40)),
+                decoration: BoxDecoration(border: Border.all(color: Colors.grey, width: 20))
+              ),
             ),
           ],
         ),
